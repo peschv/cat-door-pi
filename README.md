@@ -23,8 +23,11 @@ Full range of features of this system:
   least 5% images that are background images, i.e. that do not contain any cats. </li>
   <li> Create an account on Roboflow and load the photographs to a new dataset. </li>
   <li> Label each photograph with the appropriate labels, i.e. draw boxes around the cat’s
-  face specifically from chin to tips of the ears. The label name should be specific and also 
-  include no spaces. For example, nelson_face rather than “nelson face”. </li>
+  face specifically from chin to tips of the ears, as shown below. The label name should be specific and also 
+  include no spaces, ex. fluffy_face rather than “fluffy face”.
+  
+  <img src="https://github.com/peschv/cat-door-pi/blob/main/images/face_parameters.png" alt="The bounding box parameters around a cat face" width="200">  
+  </li>
   <li> Once the dataset is completely labeled, select “Finish Uploading”, and in the select
   “Split Images Between Test/Valid/Train” at a ratio of 70% for Test, 20% for Valid and
   10% for Train. Generate a new version (in the “Generate” tab), and add the
@@ -329,7 +332,13 @@ running).
 </details>
 
 <details><summary><strong>ESP32-S2 Device (optional)</strong></summary>
-<br>
+The purpose of this device is to keep the logs accurate for the web application
+  even when the cat enters/exits a non-monitored door. This is done by having the
+  user press either "IN" or "OUT" on the ESP32 device which sends the information to the Pi.
+  
+<a href="https://github.com/peschv/cat-door-pi/blob/main/images/flowchart_esp32.png" 
+   target="_blank">View this flowchart</a> for an overview on the code logic.
+
 :arrow_right: Installation
 <ol>
   <li> Plug the device into a computer using a USB cable. The device should display a
@@ -556,3 +565,11 @@ application and change the font, as some letters can look similar (such as l vs 
 
 ## Results
 Training results revealed a 98% accuracy rate. During implementation, the accuracy dropped to 91.3% (where the system correctly identified the cat in 42 of 46 instances). 
+
+<img src="https://github.com/peschv/cat-door-pi/blob/main/images/results_1.png" 
+  alt="Collection of results showing successful cat facial recognition" width="500">  
+<img src="https://github.com/peschv/cat-door-pi/blob/main/images/results_2.png" 
+  alt="Collection of results showing successful cat facial recognition" width="500">    
+<img src="https://github.com/peschv/cat-door-pi/blob/main/images/results_3.png" 
+  alt="Collection of results showing successful cat facial recognition" width="500">  
+    
