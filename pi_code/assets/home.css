@@ -1,0 +1,64 @@
+/* CSS for homepage */
+
+/* Body of homepage */
+body {
+    background-image: url("/assets/home_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #363945;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+/* Header containing site title */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2px;
+    letter-spacing: 1px;
+    color: #EFC050;
+    font-variant: small-caps;
+}
+
+/* Description container */
+.description {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+    padding: 2px;
+    /*background-color: rgba(108,122,137,0.4);*/
+}
+
+/* Text element in description */
+h2 {
+    color: lightgray;
+    display: flex;
+}
+
+/* Labels for radio element in description */
+#graph-select label {
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-family: Helvetica;
+    font-variant: small-caps;
+}
+
+/* Container for graph */
+.graph {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-family: Helvetica;
+}
+/* X-axis and Y-axis titles */
+.xtitle, .ytitle {
+    font-variant: small-caps;
+}
