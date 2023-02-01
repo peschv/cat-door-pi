@@ -8,6 +8,11 @@ Full range of features of this system:
 - Records the total amount of time the cat spent outside per day and displays this in a web application. 
 - If cat enters/exits through an unmonitored entrance, user presses either the "IN" or "OUT" button on an ESP32-S2 component. This will send a message to the Pi (via MQTT) to log the cat's current location. 
 
+### Brief demo
+https://youtu.be/w6o7DTU-GE0
+
+[![Link to demonstration video](https://img.youtube.com/vi/w6o7DTU-GE0/0.jpg)](https://www.youtube.com/watch?v=w6o7DTU-GE0)
+
 ## Components
 - Raspberry Pi 4B
 - Pi Camera V1.2
